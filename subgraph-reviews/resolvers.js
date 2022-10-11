@@ -14,7 +14,7 @@ const resolvers = {
       return dataSources.reviewsAPI.getOverallRatingForLocation(id);
     },
     reviewsForLocation: ({ id }, _, { dataSources }) => {
-      return dataSources.rev.getReviewsForLocation(id);
+      return dataSources.reviewsAPI.getReviewsForLocation(id);
     }
   },
   Mutation: {
